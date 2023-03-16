@@ -1,12 +1,17 @@
 <?php
+session_start();
 require_once('connectionPdo.php');
 //on récupère et on vérifie les données reçues par le formulaire
-if ( isset($_GET['id']) && !empty($_GET['id'])){
-$id = $_GET['id'] ;
+if ( isset($_SESSION['id']) && !empty($_SESSION['id'])){
+$id = $_SESSION['id'];
 
+echo $id;
 }
 
+
+
 // à faire sur chaque donnée reçue
+
 $Name = $_POST['Name'];
 $Population = $_POST['Population'];
 $Capitale = $_POST['Capital'];

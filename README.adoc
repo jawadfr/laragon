@@ -1,0 +1,44 @@
+=  Projet de consultation de données géographiques :
+
+Le projet consiste en une application web permettant de consulter des données géographiques telles que les pays, les continents, les capitales, les langues parlées, etc. Il est hébergé sur GitLab et est en mode public.
+
+L'objectif principal de ce projet est de proposer une interface agréable et ergonomique pour la consultation de ces données. Il permet également à des collaborateurs d'y mettre à jour des données.
+
+Pour les utilisateurs plus avancés, le projet propose la possibilité de mettre au point des requêtes d'interrogation personnalisées utilisant le langage SQL SELECT. Ces requêtes peuvent être sauvegardées et nommées, et avoir une portée publique ou privée.
+
+== Fonctionnalités principales
+
+Vue des données par continents, pays, capitales, langues parlées et autres critères.
+Possibilité pour les collaborateurs d'ajouter, modifier ou supprimer des données.
+Possibilité pour les utilisateurs avancés de mettre au point des requêtes SQL SELECT personnalisées.
+Sauvegarde et nommage des requêtes personnalisées.
+Possibilité de définir la portée publique ou privée des requêtes personnalisées.
+== Technologies utilisées
+
+HTML, CSS et JavaScript pour le frontend.
+PHP pour le backend.
+MySQL pour la base de données.
+GitLab pour l'hébergement du projet.
+== Installation
+
+Pour installer l'application sur votre machine, vous devez disposer d'un serveur web avec PHP et MySQL installés. Vous pouvez cloner le projet depuis GitLab et configurer votre serveur web pour qu'il pointe vers le dossier du projet.
+
+La base de données doit être créée en exécutant le fichier SQL fourni dans le dossier du projet.
+
+== Utilisation
+
+Une fois l'application installée, vous pouvez y accéder en ouvrant votre navigateur et en entrant l'URL du serveur web. Vous serez redirigé vers la page d'accueil de l'application.
+
+Depuis cette page, vous pouvez naviguer à travers les données géographiques et utiliser les fonctionnalités de recherche et de filtrage pour trouver les informations que vous cherchez.
+
+Si vous êtes un collaborateur, vous pouvez vous connecter à l'application avec vos identifiants pour accéder aux fonctionnalités d'ajout, de modification et de suppression de données.
+
+Si vous êtes un utilisateur avancé, vous pouvez utiliser les fonctionnalités de requêtes personnalisées pour interroger la base de données en utilisant le langage SQL SELECT.
+
+== Contributions
+
+Les contributions à ce projet sont les bienvenues. Si vous souhaitez contribuer, vous pouvez créer une branche depuis la branche master du projet et y effectuer vos modifications. Une fois vos modifications terminées, vous pouvez créer une demande d'extraction (pull request) pour que vos modifications soient intégrées à la branche master.
+
+== Licence
+
+Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus d'informations sur les conditions d'utilisation de ce projet.

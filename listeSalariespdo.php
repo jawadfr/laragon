@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="css/tableaux.css" rel="stylesheet">
 </head>
 
 <?php
@@ -56,8 +56,8 @@
 <table>
 <tr>
 
-  <td>NOM</td>
-  <td>Prenom</td>
+  <td>Login</td>
+  <td>Mot de passe</td>
   <td>Date de Naissance</td>
   <td>Role</td>
   <?php if($_SESSION['role']=='admin'): ?>
@@ -94,11 +94,6 @@
   ?>
 
 </table>
-
-
 <p>
-
-
-  
    </p>
    </table>

@@ -1,9 +1,12 @@
 <?php
+session_start();
 require("fonctionspdo.php");
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
   $id = $_GET['id'];
   $salarie = getcolone($id);
+  $_SESSION['id'] = $_GET['id'] ;
+  echo $id;
 }
 
 ?>

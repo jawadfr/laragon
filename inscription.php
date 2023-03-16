@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="formulaire.css" />
+  <link rel="stylesheet" href="css/formulaire.css" />
 </head>
 
 <p>
@@ -13,7 +13,7 @@
 							<form id="contactForm"  action="insert.php" method="POST">
 								
 								<div class="c100">
-									<label for="Nom">Nom : </label>
+									<label for="Nom">Nom: </label>
 									<input type="text" id="Nom" name="Nom" required>
 								</div>
 							
