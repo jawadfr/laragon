@@ -24,6 +24,7 @@ $desPays = getCountriesByContinent($continent);
 
 ?>
 
+
 <main role="main" class="flex-shrink-0">
   <div cla  ss="container">
     <h1 onclick="info(this)">Les pays en  <?php echo $continent?> </h1>
@@ -35,7 +36,25 @@ $desPays = getCountriesByContinent($continent);
            <th>Nom</th>
            <th>Population</th>
          <th>Capitale</th>
+
+         <?php
+ require_once('fonctionsPdo.php');
+ // On récupère la session
+ 
+ // On teste pour voir si nos variables de session ont bien été enregistrées
+ if (isset($_SESSION['nom']) && isset($_SESSION['Enseignant'])) {
+ echo "<p style=text-align:right;>Bienvenue : ".$_SESSION['nom']."(".$_SESSION['role'].")";
+
+ 
+ }
+
+?>
+
+
+
+         <?php if($_SESSION['role']=='Enseignant'): ?>
          <th>Modifier</th>
+         <?php endif; ?>
 
 
          </tr>
@@ -48,9 +67,13 @@ $desPays = getCountriesByContinent($continent);
           <tr>
             <td> <?php echo $lepays->Name ?></td>
             <td> <?php echo $lepays->Population ?></td>
-            <td> <?php echo getNameCapitale($lepays->Capital) ?> </td>
-            <td> <a href="modifié.php?id=<?php echo $lepays->id; ?>"><img src="images/modifié.png" alt="Modifier"></a> </td>  
+            <td> <?php echo getNameCapitale($lepays->Capital) ?> </td> 
+         
 
+            <?php if($_SESSION['role']=='Enseignant'): ?>
+  <td><a href="modifié.php?id=<?php echo $lepays->id; ?>"><img src="images/modifié.png" alt="Modifier"></a> </td>  </a> </td>
+  
+<?php endif; ?>
            
           </tr>
           <?php endforeach; ?>
