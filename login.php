@@ -16,7 +16,7 @@ $_SESSION['nom'] = $result->nom;
 $_SESSION['id'] = $result->idsalaries;
 $_SESSION['role'] = $result->role;
 // on redirige notre visiteur vers une page de notre section membre
-header ('location: index.php');
+header ('location: todo-projet.php');
 
  }
  //si le résultat est false on redirige vers la page d'authentification
