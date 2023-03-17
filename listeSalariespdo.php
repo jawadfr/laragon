@@ -60,8 +60,8 @@
   <td>Date de Naissance</td>
   <td>Role</td>
   <?php if($_SESSION['role']=='admin'): ?>
-  <td> delete</a> </td>
-<td> update</a> </td>
+  <td>Supprimer</a> </td>
+<td>Modifier</a> </td>
 <?php endif; ?>
 
 
