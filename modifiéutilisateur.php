@@ -5,9 +5,8 @@ require_once('connectionPdo.php');
 if ( isset($_SESSION['id']) && !empty($_SESSION['id'])){
 $id = $_SESSION['id'];
 
-echo $id;
-}
 
+}
 
 
 // à faire sur chaque donnée reçue
