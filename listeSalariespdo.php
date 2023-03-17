@@ -25,11 +25,10 @@
  if (isset($_SESSION['nom']) && isset($_SESSION['role'])) {
  echo "<p style=text-align:right;>Bienvenue : ".$_SESSION['nom']."(".$_SESSION['role'].")";
  echo '<br><a href="./logout.php">Deconnexion</a></p>';
- 
+
  }
  else
  header ('location: authentification.php');
- 
 ?>
 
 
@@ -92,7 +91,6 @@
  <?php
  endforeach;
   ?>
-
 </table>
 <p>
    </p>
