@@ -6,14 +6,14 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
   $id = $_GET['id'];
   $salarie = getcolone($id);
   $_SESSION['id'] = $_GET['id'] ;
-  echo $id;
+
 }
 
 ?>
-
 <form action="modifiéutilisateur.php" method="POST">
+<link rel="stylesheet" href="css/formulaire.css" />
   <fieldset>
-    <legend><i>Salariés</i></legend>
+    <legend><i>Modifié</i></legend>
    Pays :
     <input type="text" name="Name" required value="<?php echo $salarie->Name; ?>" /> <br />
    Population:
