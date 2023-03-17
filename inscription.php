@@ -10,7 +10,7 @@
     
 
   <div class="contact-form">
-							<form id="contactForm"  action="insert.php" method="POST">
+							<form id="contactForm"  action="todo'projet.php" method="POST">
 								
 								<div class="c100">
 									<label for="Nom">Nom: </label>
@@ -46,7 +46,7 @@ value="2000-01-01"
 								<label for="statut">Statut :</label>
 <select name="role" id="role">
   <option value="etudiant">Étudiant</option>
-  <option value="eleve">Élève</option>
+  <option value="Enseignant">Enseignant</option>
 </select>
 
 <br>
