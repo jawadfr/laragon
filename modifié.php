@@ -18,7 +18,6 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 <link rel="stylesheet" href="css/formulaire.css" />
 
 
-
 </head>
 <body>
 
