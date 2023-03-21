@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-
-  <meta charset="utf-8" />
-  <link href="css/tableaux.css" rel="stylesheet">
-</head>
-
-<?php
- 
-?>
-
-<a href = inscription.php> Ajoutez un utilisateurs</a>
-<a href = todo-projet.php> Retour à l'acceuil</a>
-
-
 
 
 
@@ -23,8 +7,8 @@
  session_start ();
  // On teste pour voir si nos variables de session ont bien été enregistrées
  if (isset($_SESSION['nom']) && isset($_SESSION['role'])) {
- echo "<p style=text-align:right;>Bienvenue : ".$_SESSION['nom']."(".$_SESSION['role'].")";
- echo '<br><a href="./logout.php">Deconnexion</a></p>';
+ echo "<p >Bienvenue : ".$_SESSION['nom']."(".$_SESSION['role'].")";
+
 
  }
  else
@@ -49,13 +33,25 @@
  
 
  ?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+  <meta charset="utf-8" />
+  <link href="css/tableauxx.css" rel="stylesheet">
+</head>
+
+       
+  <a href="inscription.php">Ajouter un utilisateur</a>
+  <a href="todo-projet.php">Retour à l'accueil</a>
+   
+<table class="table-style">
+
+  <thead>
+  <tr>
 
 
-
-<table>
-<tr>
-
-  <td>Login</td>
+  <th>Login</th>
   <td>Mot de passe</td>
   <td>Date de Naissance</td>
   <td>Role</td>
@@ -64,16 +60,17 @@
 <td>Modifier</a> </td>
 <?php endif; ?>
 
-
-
 </tr>
+</thead>
 
+        <tbody>
+            <tr>
  <?php 
  
  foreach ($listeSalaries as $leSalarie ) :
  
  ?>
- <tr>
+
 
 <td><?php echo $leSalarie->nom; ?></td>
 <td><?php echo $leSalarie->prenom; ?></td>
@@ -81,8 +78,8 @@
 <td><?php echo $leSalarie->role; ?></td>
 
 <?php if($_SESSION['role']=='admin'): ?>
-  <td> <a href="delete.php?id=<?php echo $leSalarie->idsalaries ?>" >delete</a> </td>
-<td> <a href="update.php?id=<?php echo $leSalarie->idsalaries ?>" >update</a> </td>
+  <td> <a href="delete.php?id=<?php echo $leSalarie->idsalaries ?>" >Supprimer</a> </td>
+<td> <a href="update.php?id=<?php echo $leSalarie->idsalaries ?>" >Modifier</a> </td>
 <?php endif; ?>
 
 
@@ -90,8 +87,10 @@
 
  <?php
  endforeach;
+ 
   ?>
 </table>
 <p>
    </p>
    </table>
+

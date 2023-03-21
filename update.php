@@ -8,10 +8,20 @@ if ( isset($_GET['id']) && !empty($_GET['id'])){
  $salarie = getSalarie($id);
 }
 ?>
+<link rel="stylesheet" href="css/formulaire.css" />
+
 
 <form action="updateSalaries.php" method="GET" >
-<fieldset>
-<legend> <i>Salariés</i></legend>
+
+
+</head>
+<body>
+
+<div class="container">
+
+
+<div class="form-group">
+
 Nom :
 <input type="text" name="nom" required value="<?php echo $salarie->nom; ?>" /> <br />
 Prénom :
@@ -26,6 +36,7 @@ Statut :
  <option value="Enseignant">Enseignant</option>
   </select>
 <input type="hidden" name="id" value="<?php echo $salarie->idsalaries ?> ">
-<fieldset>
+<br />
+
 <input type="submit" value="mettre à jour" />
 <input typ
