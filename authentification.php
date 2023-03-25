@@ -18,7 +18,6 @@ Votre login : <input type="text" name="login"><br />
 Votre mot de passe : <input type="password" name="pwd"><br />
 
 
-
 </div>
 <div class="button">
 <input type="submit" value="Connexion">
